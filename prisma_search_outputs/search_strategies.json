@@ -1,0 +1,9 @@
+{
+  "run_at_utc": "2026-08-13T07:47:20+00:00",
+  "PubMed_MEDLINE": "(\"Carcinoma, Non-Small-Cell Lung\"[Mesh] OR NSCLC[tiab] OR \"non-small cell lung\"[tiab] OR \"non-small-cell lung\"[tiab]) AND (\"Circulating Tumor DNA\"[Mesh] OR ctDNA[tiab] OR \"circulating tumor DNA\"[tiab] OR \"cell-free tumor DNA\"[tiab]) AND (\"Immune Checkpoint Inhibitors\"[Mesh] OR immunotherapy[tiab] OR pembrolizumab[tiab] OR nivolumab[tiab] OR atezolizumab[tiab] OR durvalumab[tiab] OR sintilimab[tiab] OR \"PD-1\"[tiab] OR \"PD-L1\"[tiab]) AND (clearance[tiab] OR undetectable[tiab] OR \"molecular response\"[tiab] OR kinetics[tiab] OR dynamics[tiab])",
+  "Europe_PMC": "(NSCLC OR \"non-small cell lung\" OR \"non-small-cell lung\") AND (ctDNA OR \"circulating tumor DNA\" OR \"cell-free tumor DNA\") AND (immunotherapy OR \"immune checkpoint\" OR pembrolizumab OR nivolumab OR atezolizumab OR durvalumab OR sintilimab OR \"PD-1\" OR \"PD-L1\") AND (clearance OR undetectable OR \"molecular response\" OR kinetics OR dynamics)",
+  "ClinicalTrials_gov": {
+    "condition": "non-small cell lung cancer",
+    "term": "(\"circulating tumor DNA\" OR ctDNA) AND (immunotherapy OR \"immune checkpoint\" OR \"PD-1\" OR \"PD-L1\" OR pembrolizumab OR nivolumab OR atezolizumab OR durvalumab OR sintilimab) AND (clearance OR undetectable OR response OR \"molecular response\" OR kinetics OR dynamics)"
+  }
+}
