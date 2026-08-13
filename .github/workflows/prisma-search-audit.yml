@@ -9,6 +9,7 @@ on:
       - fetch_candidate_fulltexts.py
       - fetch_candidate_fulltexts_xml.py
       - fetch_pmc_oa_packages.py
+      - fetch_candidate_figures.py
       - .github/workflows/prisma-search-audit.yml
   workflow_dispatch:
 
@@ -28,32 +29,34 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
       - name: Run fielded database searches
         run: python prisma_search_20260813_v2.py
-      - name: Fetch candidate full texts
+      - name: Fetch candidate sources
         run: |
           python fetch_candidate_fulltexts.py
           python fetch_candidate_fulltexts_xml.py
           python fetch_pmc_oa_packages.py
+          python fetch_candidate_figures.py
           find candidate_pmc_oa -type f -name '*.pdf' -exec sh -c 'pdftotext -layout "$1" "${1%.pdf}.txt"' _ {} \;
       - name: Show count log
         run: cat prisma_search_outputs_v2/search_counts.json
       - name: Upload complete search audit
         uses: actions/upload-artifact@v4
         with:
-          name: prisma-search-audit-20260813-v5
+          name: prisma-search-audit-20260813-v6
           path: |
             prisma_search_outputs_v2/
             candidate_fulltexts/
             candidate_fulltexts_xml/
             candidate_pmc_oa/
+            candidate_figures/
           if-no-files-found: error
       - name: Commit timestamped outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+glow341@users.noreply.github.com"
-          git add prisma_search_outputs_v2 candidate_fulltexts candidate_fulltexts_xml candidate_pmc_oa
+          git add prisma_search_outputs_v2 candidate_fulltexts candidate_fulltexts_xml candidate_pmc_oa candidate_figures
           if git diff --cached --quiet; then
             echo "No output changes to commit"
           else
-            git commit -m "Add PMC OA package audit"
+            git commit -m "Add candidate figure audit"
             git push origin HEAD:prisma-search-audit-20260813
           fi
