@@ -7,6 +7,7 @@ on:
     paths:
       - prisma_search_20260813_v2.py
       - fetch_candidate_fulltexts.py
+      - fetch_candidate_fulltexts_xml.py
       - .github/workflows/prisma-search-audit.yml
   workflow_dispatch:
 
@@ -27,25 +28,28 @@ jobs:
       - name: Run fielded database searches
         run: python prisma_search_20260813_v2.py
       - name: Fetch candidate full texts
-        run: python fetch_candidate_fulltexts.py
+        run: |
+          python fetch_candidate_fulltexts.py
+          python fetch_candidate_fulltexts_xml.py
       - name: Show count log
         run: cat prisma_search_outputs_v2/search_counts.json
       - name: Upload complete search audit
         uses: actions/upload-artifact@v4
         with:
-          name: prisma-search-audit-20260813-v3
+          name: prisma-search-audit-20260813-v4
           path: |
             prisma_search_outputs_v2/
             candidate_fulltexts/
+            candidate_fulltexts_xml/
           if-no-files-found: error
       - name: Commit timestamped outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+glow341@users.noreply.github.com"
-          git add prisma_search_outputs_v2 candidate_fulltexts
+          git add prisma_search_outputs_v2 candidate_fulltexts candidate_fulltexts_xml
           if git diff --cached --quiet; then
             echo "No output changes to commit"
           else
-            git commit -m "Add candidate full-text audit"
+            git commit -m "Add candidate PMC XML audit"
             git push origin HEAD:prisma-search-audit-20260813
           fi
