@@ -1,0 +1,12 @@
+"outcome","study","analysis_n","hr","lower","upper","assessment","source","yi","sei","vi"
+"PFS","Thompson et al., 2021",50,0.2,0.08,0.5,"Serial early assessment; complete-clearance subgroup","reported Cox estimate",-1.6094379124341,0.467503861857534,0.218559860851708
+"PFS","Anagnostou et al., 2023",35,0.55,0.27,1.13,"Cycle 3 day 1 (approximately 6-9 weeks)","reported Cox estimate",-0.59783700075562,0.365198280172468,0.133369783840929
+"PFS","Pellini et al., 2023",85,0.31,0.19,0.5,"Cycle 4 day 1 (approximately 9 weeks)","cycle-4 landmark Cox estimate",-1.17118298150295,0.24683719545203,0.0609286010586237
+"PFS","Zhang et al., 2024",22,0.3,0.1,1,"After two cycles (approximately 6 weeks)","baseline-detectable sensitivity estimate",-1.20397280432594,0.587404950079834,0.345044575378292
+"PFS","Fei et al., 2025",46,0.44,0.17,1.19,"Cycle 3 day 1 (6 weeks); baseline-positive ICI-chemo subgroup","extracted from Figure 5C",-0.82098055206983,0.49641477200714,0.246427625866901
+"PFS","Niknafs et al., 2026",77,0.19,0.09,0.44,"Prespecified 3-9-week window","reported landmark-response Cox estimate",-1.66073120682165,0.404845463768676,0.163899849534075
+"OS","Thompson et al., 2021",50,0.24,0.08,0.73,"Serial early assessment; complete-clearance subgroup","reported Cox estimate",-1.42711635564015,0.564045542905069,0.318147374471074
+"OS","Anagnostou et al., 2023",35,0.16,0.05,0.5,"Cycle 3 day 1 (approximately 6-9 weeks)","reported Cox estimate",-1.83258146374831,0.587404950079834,0.345044575378292
+"OS","Pellini et al., 2023",85,0.2,0.1,0.39,"Cycle 4 day 1 (approximately 9 weeks)","cycle-4 landmark full-clearance estimate",-1.6094379124341,0.347194275984357,0.120543865276302
+"OS","Fei et al., 2025",46,0.23,0.09,0.56,"Cycle 3 day 1 (6 weeks); baseline-positive ICI-chemo subgroup","extracted from Figure 5B",-1.46967597005894,0.466367527112479,0.217498670345008
+"OS","Niknafs et al., 2026",77,0.25,0.12,0.5,"Prespecified 3-9-week window","reported landmark-response Cox estimate",-1.38629436111989,0.364066984622436,0.132544769292073

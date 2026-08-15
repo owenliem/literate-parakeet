@@ -1,0 +1,3 @@
+"outcome","analysis","k","n_total","pooled_hr","ci_low","ci_high","I2_percent","tau2","prediction_interval_low","prediction_interval_high"
+"PFS","Exclude Fei et al. 2025 figure-derived estimate",5,269,0.300664571037419,0.178590749807833,0.506180663748746,18.1076251752051,0.0327286945647362,0.131178285383741,0.689132229565788
+"OS","Exclude Fei et al. 2025 figure-derived estimate",4,247,0.21526934513891,0.109023015446226,0.425056037634477,0,0,0.0858057169605918,0.540067638824326
