@@ -1,5 +1,5 @@
-Analysis run: 2026-08-15 07:03:21 UTC
+Analysis run: 2026-08-15 07:54:44 UTC
 Model: inverse-variance random effects; REML tau-squared; modified Knapp-Hartung; Riley-type prediction interval.
 
-PFS: 6 studies, 315 patients; HR 0.314 (95% CI 0.207-0.477); I2 5.5%; 95% PI 0.186-0.531.
+PFS: 6 studies, 315 patients; HR 0.320 (95% CI 0.220-0.466); I2 0.0%; 95% PI 0.214-0.480.
 OS: 5 studies, 293 patients; HR 0.218 (95% CI 0.127-0.374); I2 0.0%; 95% PI 0.117-0.404.
