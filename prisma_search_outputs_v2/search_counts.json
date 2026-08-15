@@ -1,17 +1,17 @@
 {
-  "run_at_utc": "2026-08-13T08:19:01+00:00",
+  "run_at_utc": "2026-08-15T06:55:16+00:00",
   "sources": {
     "PubMed_MEDLINE": {
       "query": "(\"Carcinoma, Non-Small-Cell Lung\"[Mesh] OR NSCLC[tiab] OR \"non-small cell lung\"[tiab] OR \"non-small-cell lung\"[tiab]) AND (\"Circulating Tumor DNA\"[Mesh] OR ctDNA[tiab] OR \"circulating tumor DNA\"[tiab] OR \"cell-free tumor DNA\"[tiab]) AND (\"Immune Checkpoint Inhibitors\"[Mesh] OR immunotherapy[tiab] OR pembrolizumab[tiab] OR nivolumab[tiab] OR atezolizumab[tiab] OR durvalumab[tiab] OR sintilimab[tiab] OR \"PD-1\"[tiab] OR \"PD-L1\"[tiab]) AND (clearance[tiab] OR undetectable[tiab] OR \"molecular response\"[tiab] OR kinetics[tiab] OR dynamics[tiab])",
       "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Carcinoma%2C+Non-Small-Cell+Lung%22%5BMesh%5D+OR+NSCLC%5Btiab%5D+OR+%22non-small+cell+lung%22%5Btiab%5D+OR+%22non-small-cell+lung%22%5Btiab%5D%29+AND+%28%22Circulating+Tumor+DNA%22%5BMesh%5D+OR+ctDNA%5Btiab%5D+OR+%22circulating+tumor+DNA%22%5Btiab%5D+OR+%22cell-free+tumor+DNA%22%5Btiab%5D%29+AND+%28%22Immune+Checkpoint+Inhibitors%22%5BMesh%5D+OR+immunotherapy%5Btiab%5D+OR+pembrolizumab%5Btiab%5D+OR+nivolumab%5Btiab%5D+OR+atezolizumab%5Btiab%5D+OR+durvalumab%5Btiab%5D+OR+sintilimab%5Btiab%5D+OR+%22PD-1%22%5Btiab%5D+OR+%22PD-L1%22%5Btiab%5D%29+AND+%28clearance%5Btiab%5D+OR+undetectable%5Btiab%5D+OR+%22molecular+response%22%5Btiab%5D+OR+kinetics%5Btiab%5D+OR+dynamics%5Btiab%5D%29&retmode=json&retmax=100000&sort=pub+date",
-      "reported_count": 74,
-      "retrieved_count": 74
+      "reported_count": 75,
+      "retrieved_count": 75
     },
     "Europe_PMC": {
       "query": "(TITLE_ABS:NSCLC OR TITLE_ABS:\"non-small cell lung\" OR TITLE_ABS:\"non-small-cell lung\") AND (TITLE_ABS:ctDNA OR TITLE_ABS:\"circulating tumor DNA\" OR TITLE_ABS:\"cell-free tumor DNA\") AND (TITLE_ABS:immunotherapy OR TITLE_ABS:\"immune checkpoint\" OR TITLE_ABS:pembrolizumab OR TITLE_ABS:nivolumab OR TITLE_ABS:atezolizumab OR TITLE_ABS:durvalumab OR TITLE_ABS:sintilimab OR TITLE_ABS:\"PD-1\" OR TITLE_ABS:\"PD-L1\") AND (TITLE_ABS:clearance OR TITLE_ABS:undetectable OR TITLE_ABS:\"molecular response\" OR TITLE_ABS:kinetics OR TITLE_ABS:dynamics)",
       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3ANSCLC+OR+TITLE_ABS%3A%22non-small+cell+lung%22+OR+TITLE_ABS%3A%22non-small-cell+lung%22%29+AND+%28TITLE_ABS%3ActDNA+OR+TITLE_ABS%3A%22circulating+tumor+DNA%22+OR+TITLE_ABS%3A%22cell-free+tumor+DNA%22%29+AND+%28TITLE_ABS%3Aimmunotherapy+OR+TITLE_ABS%3A%22immune+checkpoint%22+OR+TITLE_ABS%3Apembrolizumab+OR+TITLE_ABS%3Anivolumab+OR+TITLE_ABS%3Aatezolizumab+OR+TITLE_ABS%3Adurvalumab+OR+TITLE_ABS%3Asintilimab+OR+TITLE_ABS%3A%22PD-1%22+OR+TITLE_ABS%3A%22PD-L1%22%29+AND+%28TITLE_ABS%3Aclearance+OR+TITLE_ABS%3Aundetectable+OR+TITLE_ABS%3A%22molecular+response%22+OR+TITLE_ABS%3Akinetics+OR+TITLE_ABS%3Adynamics%29&format=json&pageSize=1000&cursorMark=%2A&resultType=core",
-      "reported_count": 79,
-      "retrieved_count": 79,
+      "reported_count": 80,
+      "retrieved_count": 80,
       "pages": 1
     },
     "ClinicalTrials_gov": {
@@ -24,10 +24,10 @@
       "pages": 1
     }
   },
-  "raw_records_total": 191,
-  "unique_records_after_cross_database_deduplication": 123,
-  "duplicate_records_removed": 68,
-  "publication_records_after_deduplication": 85,
+  "raw_records_total": 193,
+  "unique_records_after_cross_database_deduplication": 124,
+  "duplicate_records_removed": 69,
+  "publication_records_after_deduplication": 86,
   "trial_register_records_after_deduplication": 38,
   "deduplication_hierarchy": [
     "NCT ID for registry records",
