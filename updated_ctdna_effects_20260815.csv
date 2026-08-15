@@ -1,0 +1,12 @@
+outcome,study,analysis_n,hr,lower,upper,assessment,source
+PFS,"Thompson et al., 2021",50,0.20,0.08,0.50,"Serial early assessment; complete-clearance subgroup","reported Cox estimate"
+PFS,"Anagnostou et al., 2023",35,0.55,0.27,1.13,"Cycle 3 day 1 (approximately 6-9 weeks)","reported Cox estimate"
+PFS,"Pellini et al., 2023",85,0.31,0.19,0.50,"Cycle 4 day 1 (approximately 9 weeks)","cycle-4 landmark Cox estimate"
+PFS,"Zhang et al., 2024",22,0.30,0.10,1.00,"After two cycles (approximately 6 weeks)","baseline-detectable sensitivity estimate"
+PFS,"Fei et al., 2025",46,0.44,0.17,1.19,"Cycle 3 day 1 (6 weeks); baseline-positive ICI-chemo subgroup","extracted from Figure 5C"
+PFS,"Niknafs et al., 2026",77,0.19,0.09,0.44,"Prespecified 3-9-week window","reported landmark-response Cox estimate"
+OS,"Thompson et al., 2021",50,0.24,0.08,0.73,"Serial early assessment; complete-clearance subgroup","reported Cox estimate"
+OS,"Anagnostou et al., 2023",35,0.16,0.05,0.50,"Cycle 3 day 1 (approximately 6-9 weeks)","reported Cox estimate"
+OS,"Pellini et al., 2023",85,0.20,0.10,0.39,"Cycle 4 day 1 (approximately 9 weeks)","cycle-4 landmark full-clearance estimate"
+OS,"Fei et al., 2025",46,0.23,0.09,0.56,"Cycle 3 day 1 (6 weeks); baseline-positive ICI-chemo subgroup","extracted from Figure 5B"
+OS,"Niknafs et al., 2026",77,0.25,0.12,0.50,"Prespecified 3-9-week window","reported landmark-response Cox estimate"
