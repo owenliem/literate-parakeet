@@ -1,0 +1,51 @@
+name: Updated ctDNA meta-analysis in R
+
+on:
+  push:
+    branches:
+      - prisma-search-audit-20260813
+    paths:
+      - updated_ctdna_effects_20260815.csv
+      - meta_analysis_updated.R
+      - .github/workflows/meta-analysis-r.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: prisma-search-audit-20260813
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+      - name: Install metafor
+        run: Rscript -e 'install.packages("metafor", repos="https://cloud.r-project.org")'
+      - name: Run analysis
+        run: Rscript meta_analysis_updated.R
+      - name: Display summary
+        run: cat r_meta_outputs_20260815/analysis_summary.txt
+      - name: Upload R analysis outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: updated-ctdna-meta-analysis-R-20260815
+          path: r_meta_outputs_20260815/
+          if-no-files-found: error
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r_meta_outputs_20260815
+          if git diff --cached --quiet; then
+            echo "No output changes to commit"
+          else
+            git commit -m "Add updated R meta-analysis outputs"
+            git push origin HEAD:prisma-search-audit-20260813
+          fi
